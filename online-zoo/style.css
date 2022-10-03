@@ -729,6 +729,7 @@ footer {
 .footer-logo {
     position: relative;
     text-decoration: none;
+    width: 82px;
 }
 
 .footer-logo-text {
@@ -916,7 +917,7 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
     }
-    
+
 
     .link {
         font-weight: 500;
@@ -1177,7 +1178,7 @@ footer {
         padding: 40px 31px 50px 30px;
     }
 
-    
+
     .footer-nav {
         position: absolute;
         bottom: 53px;
@@ -1208,6 +1209,7 @@ footer {
 
     .header-logo {
         border: none;
+        padding: 0;
     }
 
     .header-logo-text {
@@ -1218,8 +1220,8 @@ footer {
 
     .header-logo-img {
         position: absolute;
-        left: 8px;
-        bottom: 7px;
+        left: 3px;
+        bottom: 3px;
     }
 
     .nav {
@@ -1246,7 +1248,7 @@ footer {
         width: 100%;
     }
 
-    
+
 
     .home {
         height: 339px;
@@ -1473,19 +1475,452 @@ footer {
         height: 29px;
     }
 
+
+
+
+
     .review {
         margin-top: 60px;
     }
 
     .review-cards {
+        min-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        
+        height: 352px;
+        margin-top: 35px;
     }
 
     .review-card-wrapper {
-        min-width: 600px;
-        height: 109px;
+        width: 100%;
+        box-sizing: border-box;
     }
+
+    .review-card-wrapper:not(:first-child) {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .review-content {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .review-card {
+        padding: 10px 27px 8px 16px;
+
+    }
+
+    .review-text {
+        height: 38px;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .review-button-wrapper {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .review-button {
+        margin-top: 40px;
+        width: 240px;
+        height: 54px;
+    }
+
+    .review-img {
+        position: absolute;
+        right: -5px;
+        bottom: -151px;
+        width: 120px;
+        height: 209px;
+    }
+
+
+
+    .footer-wrapper {
+        margin-top: 80px;
+        padding: 12px 20px;
+        position: relative;
+        height: 282px;
+    }
+
+    .socials {
+        position: absolute;
+        right: 20px;
+        top: 13px;
+    }
+
+    .footer-button {
+        margin-top: 32px;
+    }
+
+    .social:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    .footer-top-right {
+        display: none;
+    }
+
+    .social-text {
+        display: none;
+    }
+
+    .footer-nav {
+        position: absolute;
+        bottom: 11.5%;
+        left: -23.5%;
+    }
+
+    .link-footer {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .link-footer:not(:first-child) {
+        margin-left: 37px;
+    }
+
+    .signature {
+        position: absolute;
+        bottom: 35px;
+        right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    header {
+        padding: 0 10px;
+    }
+
+    .circle {
+        width: 119px;
+        height: 119px;
+    }
+
+    .home {
+        height: 187px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+
+    .home-content {
+        position: absolute;
+        bottom: 49px;
+        left: 50.5%;
+    }
+
+    .home-text {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 0.75;
+        position: absolute;
+        left: 19px;
+        top: 21px;
+    }
+
+    .button-home {
+        position: absolute;
+        left: -126%;
+        top: 157%;
+    }
+
+    .guide-content {
+        padding: 0 10px;
+    }
+
+    .guide-content-right {
+        margin-top: 15px;
+    }
+
+    .guide-content-right-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 30px;
+    }
+
+    .guide-content-right-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3;
+        margin-top: 10px;
+    }
+
+    .guide-content-right-subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+
+    .guide-content-right-description {
+        margin-top: 10px;
+    }
+
+    .guide-content-right-img {
+        width: 110px;
+        height: 217px;
+        position: absolute;
+        right: -78px;
+        bottom: 261px;
+    }
+
+    .cards-section {
+        position: relative;
+        z-index: 1;
+        margin-top: 40px;
+        padding: 0 17px;
+    }
+
+    .cards-section {
+        padding-bottom: 60px;
+        overflow: hidden;
+    }
+
+    .cards {
+        row-gap: 16px;
+    }
+
+    .circle-card-left {
+        display: none;
+    }
+
+    .circle-card-right {
+        display: none;
+    }
+
+    .card-content {
+        padding: 6px 9px 11px 12px;
+    }
+
+    .button-card {
+        margin-bottom: 0;
+        margin-top: 3px;
+
+
+    }
+
+
+
+    .cards-decoration-right {
+        width: 92px;
+        height: 74px;
+        position: absolute;
+        right: -20px;
+        bottom: -6px;
+
+    }
+
+    .cards-decoration-left {
+        position: absolute;
+        left: -84px;
+        bottom: -33px;
+        width: 143px;
+        height: 106px;
+    }
+
+    .payment-content {
+        height: 1043px;
+    }
+
+    .payment-background {
+        padding: 20px 10px;
+        margin: 0;
+    }
+
+    .payment-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+
+    .payment-content-text {
+        padding: 0;
+    }
+
+    .payment-subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .payment-description {
+        display: none;
+    }
+
+    .payment-text {
+        display: none;
+    }
+
+    .payment-guide {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 30px;
+    }
+
+    .payment-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .payment-card-text {
+        margin-top: 10px;
+    }
+
+    .payment-card-area {
+        margin-top: 17px;
+    }
+
+    .payment-arrow-right {
+        position: absolute;
+        top: 455px;
+        left: 204px;
+        transform: rotate(90deg);
+        width: 92px;
+        height: 24px;
+
+    }
+
+    .payment-arrow-left {
+        position: absolute;
+        top: 205px;
+        left: 204px;
+        transform: rotate(90deg);
+        width: 92px;
+        height: 24px;
+    }
+
+    .button-pay {
+        margin-top: 38px;
+        margin-bottom: 30px;
+    }
+
+    .review {
+        overflow: hidden;
+        margin-top: 0;
+        padding: 0 15px;
+    }
+
+    .review-content {
+        padding-bottom: 60px;
+    }
+
+    .review-name {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 30px;
+    }
+
+
+
+    .review-cards {
+        margin-top: 20px;
+        height: 357px;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .review-button {
+        margin-top: 30px;
+        width: 240px;
+        height: 54px;
+    }
+
+    .review-img {
+        position: absolute;
+        right: -2px;
+        bottom: -37px;
+        width: 67px;
+        height: 101px;
+
+    }
+
+    .footer-wrapper {
+        margin-top: 0;
+        padding: 20px 13px 20px 9px;
+    }
+
+    .footer-top {
+        display: block;
+    }
+
+    .footer-logo-text {
+        border: none;
+    }
+
+    .footer-logo-img {
+        position: absolute;
+        left: 158px;
+        top: 2px;
+        width: 10px;
+        height: 16px;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        position: absolute;
+        right: 1px;
+        top: 52px;
+        width: 100%;
+    }
+
+    .social {
+        margin: 0px;
+    }
+
+    .social:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    .footer-button {
+        margin-top: 82px;
+    }
+
+    .footer-nav {
+        position: absolute;
+        bottom: 2.5%;
+        left: 0.5%;
+    }
+
+    .link-footer:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    .signature {
+        position: absolute;
+        bottom: 57px;
+        right: 9px;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+
+
+
+
 
 }

@@ -101,6 +101,7 @@ header {
 }
 
 .guide-wrapper {
+    padding: 0 30px;
     display: flex;
     justify-content: center;
     background: linear-gradient(316deg, rgba(254, 210, 144, 0.7) 30%, #FEBDAB 101%, rgba(254, 210, 144, 0.7) 106%), linear-gradient(316deg, rgba(254, 189, 171, 0.74) 30%, rgba(243, 169, 248, 0.66) 51%, #E0D8F0 81%, #EAF7FE 128%, #EAF7FE 150%), linear-gradient(316deg, rgba(254, 189, 171, 0.74) 30%, rgba(243, 169, 248, 0.66) 51%, #E0D8F0 81%, #EAF7FE 128%, #EAF7FE 150%);
@@ -108,7 +109,7 @@ header {
 
 .guide {
     width: 1160px;
-    padding-top: 36px;
+    padding-top: 40px;
     padding-bottom: 180px;
 }
 
@@ -135,7 +136,7 @@ header {
     font-size: 36px;
     line-height: 1.3;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 46px;
 }
 
 .guide-content {
@@ -144,7 +145,8 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
-    padding: 40px 92px 62px;
+    padding: 40px 92px 64px;
+    border-radius: 20px;
 }
 
 .guide-content-title {
@@ -168,8 +170,9 @@ header {
 
 .guide-content-fact {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     margin-top: 60px;
+    margin-left: -13px;
 
 }
 
@@ -178,7 +181,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 55px;
 }
 
 .guide-number {
@@ -193,10 +196,12 @@ header {
     width: 14px;
     margin-left: 11px;
     margin-right: 64px;
+    margin-bottom: -25px;
 }
 
 .guide-content-text {
     margin: 0;
+    margin-top: 11px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.4;
@@ -209,7 +214,7 @@ header {
 
 .guide-content-scale {
     position: relative;
-    margin-top: 48px;
+    margin-top: 47px;
     width: 100%;
 }
 
@@ -218,6 +223,8 @@ header {
     font-size: 16px;
     line-height: 1.4;
     color: #000;
+    margin: 0;
+    padding-left: 4px;
 }
 
 .scale-container {
@@ -226,7 +233,7 @@ header {
     justify-content: space-between;
     padding: 0 26px;
     z-index: 1;
-    margin-top: 10px;
+    margin-top: 26px;
 }
 
 .scale-item {
@@ -259,8 +266,8 @@ header {
 
 .scale-number {
     position: absolute;
-    left: -38px;
-    top: 27px;
+    left: -29px;
+    top: 30px;
     color: #333B41;
     font-weight: 500;
     font-size: 26px;
@@ -271,7 +278,7 @@ header {
 .line-container {
     position: absolute;
     left: 0;
-    top: 46px;
+    top: 39px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -289,7 +296,7 @@ header {
 }
 
 .donation {
-    margin-top: 50px;
+    margin-top: 56px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,12 +361,12 @@ header {
     padding: 16px 0;
     text-decoration: none;
     transition: color 0.3s ease;
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 .donation-text {
     margin: 0;
-    margin-top: 30px;
+    margin-top: 31px;
 }
 
 footer {
@@ -552,7 +559,40 @@ footer {
 
 
 
-@media screen and (max-width: 1599px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
     header {
         padding-left: 30px;
         padding-right: 30px;
@@ -601,28 +641,39 @@ footer {
     .guide-content {
         margin: 0;
         margin-top: 40px;
-        padding: 0 44px 46px 47px;
+        padding: 0 44px 48px 47px;
     }
 
     .guide-content-title {
-        margin-top: 20px;
+        margin-top: 19px;
+    }
+
+    .guide-content-description{
+        margin-top: 11px;
+    }
+
+    .scale-container {
+        padding: 0 29px;
+        margin-top: 25px;
+    }
+
+    .scale-item:nth-child(1) {
+        display: none;
     }
 
 
+    .line-container {
+        width: calc(100% - 40px);
+        margin-left: 18px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .line {
+        margin: 0 15px;
+    }
+    
+    .donation {
+        margin-top: 57px;
+    }
 
     footer {
         padding: 0;
@@ -651,4 +702,505 @@ footer {
     .footer-top-right {
         margin-right: 9px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+
+    header {
+        /* position: relative; */
+        /* height: 34px; */
+        padding: 0 20px
+    }
+
+    .header-wrapper {
+        height: 34px;
+    }
+
+    .header-logo {
+        border: none;
+        padding: 0;
+    }
+
+    .header-logo-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .header-logo-img {
+        position: absolute;
+        left: 3px;
+        bottom: 3px;
+    }
+
+    .nav {
+        display: none;
+
+    }
+
+    .link {
+        display: none;
+    }
+
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 18px;
+        height: 10px;
+    }
+
+    .header-menu-line {
+        display: block;
+        background-color: #FFF;
+        height: 2px;
+        width: 100%;
+    }
+
+
+
+    .home {
+        height: 335px;
+        background-size: 182%;
+        background-repeat: no-repeat;
+        background-position-x: -167px;
+        background-position-y: -165px;
+    }
+
+    .home-content {
+        position: absolute;
+        bottom: 92px;
+        left: 51.5%;
+    }
+
+
+
+    .guide-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 30px;
+    }
+
+    .guide-description {
+        margin-top: 20px;
+    }
+
+    .guide-subtitle {
+        margin-top: 30px;
+    }
+
+    .guide-wrapper {
+        padding: 0 20px 46px 20px;
+    }
+
+    .guide-content {
+        border-radius: 20px;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .guide-content-title {
+        margin-top: 30px;
+    }
+
+    .guide-content-description {
+        text-align: center;
+        margin-top: 19px;
+    }
+
+    .guide-content-fact {
+        margin-top: 50px;
+    }
+
+
+    .guide-symbol {
+        width: 14px;
+        margin-left: 5px;
+        margin-right: 71px;
+    }
+
+    /* .guide-number {
+        margin-top: 11px;
+    } */
+
+    .guide-content-scale {
+        margin-top: 41px;
+    }
+
+    .guide-content-scale-text {
+        margin-left: 10px;
+        padding-left: 0;
+    }
+
+    .scale-number {
+        position: absolute;
+        left: -21px;
+        top: 26px;
+    }
+
+    .line-container {
+        top: 29px;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .scale-container {
+        margin-top: 14px;
+        padding: 0 34px;
+    }
+
+    .scale-item:nth-child(1) {
+        display: none;
+    }
+
+    .scale-item:nth-child(2) {
+        display: none;
+    }
+
+    .scale-item:nth-child(3) {
+        display: none;
+    }
+
+    .scale-number {
+        top: 31px;
+    }
+
+
+    .donation-input {
+        width: 180px;
+        height: 42px;
+    }
+
+    .donation-choice-wrapper {
+        margin-top: 32px;
+    }
+
+    .donation-text {
+        margin-bottom: 34px;
+    }
+
+    .donation-button {
+        margin-top: 31px;
+    }
+
+    .footer-wrapper {
+        margin:0;
+        padding: 12px 20px;
+        position: relative;
+        height: 282px;
+    }
+
+    .socials {
+        position: absolute;
+        right: 20px;
+        top: 13px;
+    }
+
+    .footer-button {
+        margin-top: 32px;
+    }
+
+    .social:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    .footer-top-right {
+        display: none;
+    }
+
+    .social-text {
+        display: none;
+    }
+
+    .footer-nav {
+        position: absolute;
+        bottom: 11.5%;
+        left: -23.5%;
+    }
+
+    .link-footer {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .link-footer:not(:first-child) {
+        margin-left: 37px;
+    }
+
+    .signature {
+        position: absolute;
+        bottom: 35px;
+        right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 639px) and (min-width: 0px)  {
+    .home {
+        height: 187px;
+        background-position-y: -153px;
+    }
+
+    .guide-wrapper {
+        padding: 0 10px 21px;
+    }
+
+    .guide {
+        width: 100%;
+    }
+
+    .guide-title {
+        margin-top: 31px;
+    }
+
+    .guide-description {
+        line-height: 1.38;
+    }
+
+    .guide-subtitle {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .guide-content-title {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .guide-content-description {
+        margin-top: 9px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .guide-img {
+        width: 160px;
+        height: 139px;
+    }
+
+    .guide-number {
+        font-size: 41px;
+    } 
+
+    .guide-content-fact {
+        margin: 0;
+        margin-top: 9px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .guide-symbol {
+        margin: 0;
+        margin-left: 6px;
+        margin-right: 36px;
+        margin-bottom: -17px;
+        
+        width: 8px;
+    }
+
+    .guide-content-text {
+        font-size: 9px;
+        line-height: 1.4;
+        margin-top: 6px;
+    }
+
+    .guide-img-left {
+        padding-top: 33px;
+    }
+
+    .guide-content-scale {
+        margin-top: 4px;
+    }
+
+    .guide-content-scale-text {
+        margin-left: 0;
+    }
+
+    .line-container {
+        top: 30px;
+        height: 14px;
+    }
+
+    .line {
+        margin: 0 19px;
+    }
+
+    .scale-container {
+        margin-top: 12px;
+        padding: 0 17px;
+    }
+
+    .scale-circle {
+        width: 5px;
+        height: 5px;
+    }
+
+    .scale-number {
+        font-size: 13px;
+        line-height: 1.4;
+        top: 16px;
+        left: -10px;
+    }
+
+    .scale-item:nth-child(6) .circle-wrapper {
+        display: block;
+        width: 20px;
+        left: -8px;
+        top: -17px;
+    }
+
+    .donation {
+        margin-top: 3px;
+    }
+
+    .donation-choice-wrapper {
+        margin-top: 26px;
+    }
+
+    .donation-button {
+        margin-top: 29px;
+    }
+
+    .donation-text {
+        letter-spacing: -0.02px;
+        margin-bottom: 22px;
+    }   
+
+    .footer-wrapper {
+        margin-top: 0;
+        padding: 20px 13px 20px 9px;
+    }
+
+    .footer-top {
+        display: block;
+    }
+
+    .footer-logo-text {
+        border: none;
+    }
+
+    .footer-logo-img {
+        position: absolute;
+        left: 158px;
+        top: 2px;
+        width: 10px;
+        height: 16px;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        position: absolute;
+        right: 1px;
+        top: 52px;
+        width: 100%;
+    }
+
+    .social {
+        margin: 0px;
+    }
+
+    .social:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    .footer-button {
+        margin-top: 82px;
+    }
+
+    .footer-nav {
+        position: absolute;
+        bottom: 2.5%;
+        left: 0.5%;
+    }
+
+    .link-footer:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    .signature {
+        position: absolute;
+        bottom: 57px;
+        right: 9px;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+
+
+
+    
+
+
 }
