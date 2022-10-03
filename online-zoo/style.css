@@ -92,11 +92,17 @@ header {
     height: 16px;
 }
 
+.header-menu {
+    display: none;
+}
+
 .home {
-    display: flex;
+    /* display: flex; */
     height: 780px;
     position: relative;
-    top: -80px;
+    /* top: -80px; */
+    background-image: url(./assets/images/giantpanda.png);
+    background-size: cover;
 }
 
 .home-content {
@@ -127,9 +133,6 @@ header {
     color: #FFEE2E;
 }
 
-.home-img {
-    width: 100%;
-}
 
 .button-home {
     position: absolute;
@@ -244,6 +247,46 @@ main {
     margin-top: 18px;
 }
 
+.card-img {
+    width: 366px;
+    height: 366px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card:nth-child(1) .card-img {
+    background-image: url(../online-zoo/assets/images/giantpandas.png);
+}
+
+.card:nth-child(2) .card-img {
+    background-image: url(../online-zoo/assets/images/eagles.png);
+}
+
+.card:nth-child(3) .card-img {
+    background-image: url(../online-zoo/assets/images/gorillas.png);
+}
+
+.card:nth-child(4) .card-img {
+    background-image: url(../online-zoo/assets/images/two-toed-sloth.png);
+}
+
+.card:nth-child(5) .card-img {
+    background-image: url(../online-zoo/assets/images/cheetahs.png);
+}
+
+.card:nth-child(6) .card-img {
+    background-image: url(../online-zoo/assets/images/penguins.png);
+}
+
+.card:nth-child(7) .card-img {
+    background-image: url(../online-zoo/assets/images/alligator.png);
+}
+
+.card:nth-child(7) {
+    display: none;
+}
+
 .card-content {
     display: flex;
     justify-content: space-between;
@@ -355,12 +398,29 @@ main {
     transition: color .3s ease;
 }
 
+
+
+
+
+
+
 .cards-decoration-left {
+    /* background-image: url(../online-zoo/assets/images/palm_foto1.png); */
     position: absolute;
-    height: 418px;
-    left: 0;
-    bottom: 0;
+    height: 642px;
+    width: 880px;
+    left: -585px;
+    bottom: -110px;
+
 }
+
+
+
+
+
+
+
+
 
 .cards-decoration-right {
     position: absolute;
@@ -380,7 +440,7 @@ main {
 
 .payment-content {
     background-color: rgba(253, 253, 255, 0.52);
-    height: 835px;
+    /* height: 835px; */
     width: 1160px;
     text-align: center;
     border-radius: 20px;
@@ -467,6 +527,16 @@ main {
     width: 168px;
     text-align: left;
     margin-left: 15px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.payment-arrow-left {
+    display: none;
+}
+
+.payment-arrow-right {
+    display: none;
 }
 
 .button-pay {
@@ -476,6 +546,7 @@ main {
     border-radius: 25px;
     border: 0;
     margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .button-pay-text {
@@ -646,7 +717,7 @@ footer {
 
 .footer-wrapper {
     position: relative;
-    width: 1160px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 
@@ -823,4 +894,598 @@ footer {
 
 .signature-text:not(:first-child) {
     margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+
+    .link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .link:not(:first-child) {
+        margin-left: 48px;
+    }
+
+    .guide-content-right-img {
+        display: none;
+    }
+
+    .home {
+        height: 504px;
+        background-size: 119%;
+        background-repeat: no-repeat;
+        background-position-x: -96px;
+        background-position-y: -71px;
+    }
+
+    .home-content {
+        position: absolute;
+        left: 45.5%;
+        bottom: 147px;
+    }
+
+    .circle {
+        width: 367px;
+        height: 367px;
+    }
+
+    .home-text {
+        position: absolute;
+        left: 66px;
+        top: 53px;
+        font-size: 85px;
+        line-height: 0.75;
+        margin: 0;
+    }
+
+    .button-home {
+        position: absolute;
+        left: 30%;
+        top: 112%;
+    }
+
+    .guide-content {
+        margin-top: 100px;
+        padding: 0 30px;
+    }
+
+    .guide-content-left-img {
+        width: 455px;
+        height: 408px;
+        object-fit: cover;
+        object-position: -80px 10px;
+    }
+
+    .guide-content-right-description {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .cards-section {
+        padding: 0 30px;
+        margin-top: 142px;
+    }
+
+    .cards {
+        margin: 0;
+        width: 100%;
+        row-gap: 75px;
+    }
+
+    .card {
+        width: 292px;
+        height: 354px;
+    }
+
+    .card-img {
+        width: 294px;
+        height: 294px;
+    }
+
+    .card-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .circle-card-right {
+        position: absolute;
+        top: 386px;
+        right: 353px;
+    }
+
+    .circle-card-left {
+        top: 386px;
+        left: 355px;
+    }
+
+
+
+    .cards-decoration-right {
+        position: absolute;
+        right: 0;
+        bottom: -60px;
+        width: 241px;
+        height: 180px;
+    }
+
+    .cards-decoration-left {
+        position: absolute;
+        left: -192px;
+        bottom: -142px;
+        width: 386px;
+        height: 281px;
+    }
+
+    .button-card {
+        margin-bottom: 80px;
+        margin-top: 1px;
+    }
+
+    .payment-background {
+        margin-top: 61px;
+        position: relative;
+        z-index: 1;
+        padding: 30px 30px 50px 30px;
+
+    }
+
+    .payment-content {
+        /* width: 940px; */
+        height: 796px;
+    }
+
+    .payment-content-text {
+        padding-left: 50px;
+    }
+
+    .payment-title {
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .payment-subtitle {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .payment-description {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .payment-text {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .payment-guide {
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .payment-cards {
+        margin-top: 40px;
+        padding: 0 77px;
+        justify-content: space-between;
+    }
+
+    .payment-card-arrow {
+        width: unset;
+        flex-grow: 1;
+        /* max-height: 170px; */
+        max-height: 160px;
+    }
+
+    .payment-card-text {
+        margin-top: 30px;
+        margin-left: 11px;
+    }
+
+    .button-pay {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .review {
+        /* padding: 0; */
+        margin-top: 100px;
+        padding: 0 30px;
+
+    }
+
+    .review-content {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .review-cards {
+        /* width: 940px; */
+        margin-top: 30px;
+    }
+
+    .review-card-wrapper {
+        min-width: 289px;
+    }
+
+    .review-card-wrapper:not(:first-child) {
+        margin-left: 30px;
+    }
+
+
+    .review-card {
+        padding: 10px 27px 16px 16px;
+        /* width: 293px ;
+        box-sizing: border-box; */
+    }
+
+
+
+    .review-img {
+        position: absolute;
+        right: 0;
+        bottom: -64px;
+        width: 207px;
+        height: 305px;
+    }
+
+    .review-name {
+        margin: 0;
+    }
+
+    .scroll {
+        margin-top: 25px;
+
+    }
+
+    .review-button-wrapper {
+        padding-bottom: 140px;
+    }
+
+    .review-button {
+        margin-top: 24px;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .footer-wrapper {
+        /* width: 100%; */
+        padding: 40px 31px 50px 30px;
+    }
+
+    
+    .footer-nav {
+        position: absolute;
+        bottom: 53px;
+        left: -14px;
+    }
+
+    .link-footer:not(:first-child) {
+        margin-left: 48px;
+    }
+
+    .footer-top-right {
+        margin-right: 9px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        /* position: relative; */
+        /* height: 34px; */
+        padding: 0 20px
+    }
+
+    .header-wrapper {
+        height: 34px;
+    }
+
+    .header-logo {
+        border: none;
+    }
+
+    .header-logo-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .header-logo-img {
+        position: absolute;
+        left: 8px;
+        bottom: 7px;
+    }
+
+    .nav {
+        display: none;
+
+    }
+
+    .link {
+        display: none;
+    }
+
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 18px;
+        height: 10px;
+    }
+
+    .header-menu-line {
+        display: block;
+        background-color: #FFF;
+        height: 2px;
+        width: 100%;
+    }
+
+    
+
+    .home {
+        height: 339px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        background-position-y: -34px;
+    }
+
+    .home-content {
+        position: absolute;
+        bottom: 92px;
+        left: 51.5%;
+    }
+
+    .circle {
+        width: 238px;
+        height: 238px;
+    }
+
+    .home-text {
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 0.75;
+        position: absolute;
+        left: 44px;
+        top: 43px;
+    }
+
+    .button-home {
+        position: absolute;
+        left: -130%;
+        top: 99%;
+    }
+
+    .guide-content {
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    .guide-content-right-subtitle {
+        margin-top: 30px;
+    }
+
+    .guide-content-right-description {
+        margin-top: 20px;
+    }
+
+
+
+    .guide-content-left-img {
+        display: none;
+    }
+
+    .guide-content-right-img {
+        display: block;
+        position: absolute;
+        right: -101px;
+        bottom: -48px;
+        width: 233px;
+        z-index: 1;
+
+    }
+
+    .cards-section {
+        margin: 0;
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+
+    .cards {
+
+
+        row-gap: 92px;
+
+    }
+
+    .card {
+        width: 285px;
+        height: 332px;
+        margin: 0;
+    }
+
+
+
+    .card:nth-child(5) {
+        display: none;
+    }
+
+    .card:nth-child(6) {
+        display: none;
+    }
+
+    .card-img {
+        height: 285px;
+        width: 285px;
+    }
+
+    .card-title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .card-description {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .card-icon {
+        height: 29px;
+    }
+
+    .circle-card-left {
+        position: absolute;
+        top: 344px;
+        left: 244px;
+    }
+
+    .circle-card-right {
+        position: absolute;
+        top: 344px;
+        right: 243px;
+    }
+
+    .button-card {
+        margin-bottom: 40px;
+        margin-top: -35px;
+    }
+
+    .cards-decoration-right {
+        position: absolute;
+        right: 0px;
+        bottom: -62px;
+        width: 179px;
+        height: 133px;
+
+    }
+
+    .cards-decoration-left {
+        position: absolute;
+        left: -225px;
+        bottom: -143px;
+        width: 352px;
+        height: 284px;
+    }
+
+    .payment-background {
+        padding: 20px 0;
+    }
+
+    .payment-content {
+        height: 741px;
+        width: 100%;
+    }
+
+    .payment-content-text {
+        padding-left: 20px;
+    }
+
+    .payment-title {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 1.2;
+        margin-top: 10px;
+    }
+
+    .payment-subtitle {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .payment-guide {
+        margin-top: 30px;
+    }
+
+    .payment-cards {
+        position: relative;
+        padding: 0;
+        margin: 20px 32px 0 20px;
+        justify-content: space-between;
+
+    }
+
+    .payment-card-arrow {
+        display: none;
+    }
+
+    .payment-card {
+        margin: 0;
+    }
+
+    .payment-card:not(:first-child) {
+        margin-left: 42px;
+    }
+
+    .payment-card-text {
+        margin-left: 0;
+    }
+
+    .button-pay {
+        margin-top: 42px;
+        /* margin-bottom: 30px; */
+
+    }
+
+    .payment-arrow-left {
+        position: absolute;
+        top: -15px;
+        left: 137px;
+        display: block;
+        width: 89px;
+        height: 29px;
+    }
+
+    .payment-arrow-right {
+        position: absolute;
+        top: -15px;
+        right: 155px;
+        display: block;
+        width: 89px;
+        height: 29px;
+    }
+
+    .review {
+        margin-top: 60px;
+    }
+
+    .review-cards {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .review-card-wrapper {
+        min-width: 600px;
+        height: 109px;
+    }
+
 }
