@@ -1209,13 +1209,14 @@ footer {
 @media screen and (max-width: 640px) {
 
     header {
-        /* position: fixed; */
-        /* height: 34px; */
-        padding: 0 20px
+        position: fixed;
+        width: 100%;        
+        padding: 0;
     }
 
     .header-wrapper {
         height: 34px;
+        padding:0 20px;
     }
 
     .header-logo {
