@@ -580,7 +580,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1180px;    
+    max-width: 1180px;
 }
 
 .review-name {
@@ -602,14 +602,14 @@ main {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     padding: 2px;
     border-radius: 10px;
-    min-width: 268px;    
-    
+    min-width: 268px;
+
 }
 
 .review-card {
     background: #F1F3F2;
     padding: 15px 15px 19px 16px;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 .review-card-wrapper:not(:first-child) {
@@ -674,7 +674,7 @@ main {
 }
 
 .scroll {
-    width: 600px;    
+    width: 600px;
     margin-top: 24px;
     margin-bottom: 28px;
     -webkit-appearance: none;
@@ -1248,8 +1248,6 @@ footer {
         width: 100%;
     }
 
-
-
     .home {
         height: 339px;
         background-size: 100%;
@@ -1287,6 +1285,9 @@ footer {
     .guide-content {
         margin: 0;
         margin-top: 60px;
+        padding-left: 20px;
+        padding-right: 119px;
+
     }
 
     .guide-content-right-subtitle {
@@ -1296,8 +1297,6 @@ footer {
     .guide-content-right-description {
         margin-top: 20px;
     }
-
-
 
     .guide-content-left-img {
         display: none;
@@ -1310,7 +1309,6 @@ footer {
         bottom: -48px;
         width: 233px;
         z-index: 1;
-
     }
 
     .cards-section {
@@ -1320,10 +1318,7 @@ footer {
     }
 
     .cards {
-
-
         row-gap: 92px;
-
     }
 
     .card {
@@ -1331,8 +1326,6 @@ footer {
         height: 332px;
         margin: 0;
     }
-
-
 
     .card:nth-child(5) {
         display: none;
@@ -1386,7 +1379,6 @@ footer {
         bottom: -62px;
         width: 179px;
         height: 133px;
-
     }
 
     .cards-decoration-left {
@@ -1432,7 +1424,6 @@ footer {
         padding: 0;
         margin: 20px 32px 0 20px;
         justify-content: space-between;
-
     }
 
     .payment-card-arrow {
@@ -1453,8 +1444,6 @@ footer {
 
     .button-pay {
         margin-top: 42px;
-        /* margin-bottom: 30px; */
-
     }
 
     .payment-arrow-left {
@@ -1475,12 +1464,9 @@ footer {
         height: 29px;
     }
 
-
-
-
-
     .review {
         margin-top: 60px;
+        overflow: hidden;
     }
 
     .review-cards {
@@ -1506,11 +1492,11 @@ footer {
     .review-content {
         width: 100%;
         overflow: hidden;
+        padding-bottom: 80px;
     }
 
     .review-card {
         padding: 10px 27px 8px 16px;
-
     }
 
     .review-text {
@@ -1536,15 +1522,13 @@ footer {
     .review-img {
         position: absolute;
         right: -5px;
-        bottom: -151px;
+        bottom: -73px;
         width: 120px;
         height: 209px;
     }
 
-
-
     .footer-wrapper {
-        margin-top: 80px;
+        
         padding: 12px 20px;
         position: relative;
         height: 282px;
@@ -1917,10 +1901,5 @@ footer {
         font-size: 15px;
         line-height: 1.2;
     }
-
-
-
-
-
 
 }
