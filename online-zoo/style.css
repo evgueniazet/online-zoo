@@ -103,7 +103,7 @@ header {
     /* top: -80px; */
     background-image: url(./assets/images/giantpanda.png);
     /* background-size: cover; */
-    height: 700px;   
+    height: 700px;
     background-size: 106%;
     background-repeat: no-repeat;
     background-position-x: -27px;
@@ -1209,7 +1209,7 @@ footer {
 @media screen and (max-width: 640px) {
 
     header {
-        /* position: relative; */
+        /* position: fixed; */
         /* height: 34px; */
         padding: 0 20px
     }
@@ -1261,10 +1261,10 @@ footer {
 
     .home {
         height: 339px;
-        background-size: 100%;
+        background-size: 118%;
         background-repeat: no-repeat;
-        background-position-x: 0;
-        background-position-y: -34px;
+        background-position-x: -55px;
+        background-position-y: -30px;
     }
 
     .home-content {
@@ -1299,6 +1299,10 @@ footer {
         padding-left: 20px;
         padding-right: 119px;
 
+    }
+
+    .guide-content-right {
+        margin: 0;
     }
 
     .guide-content-right-subtitle {
@@ -1539,7 +1543,7 @@ footer {
     }
 
     .footer-wrapper {
-        
+
         padding: 12px 20px;
         position: relative;
         height: 282px;
@@ -1604,9 +1608,9 @@ footer {
 
     .home {
         height: 187px;
-        background-size: 100%;
+        background-size: 119%;
         background-repeat: no-repeat;
-        background-position-x: 0;
+        background-position-x: -29px;
         background-position-y: 0;
     }
 
