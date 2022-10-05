@@ -1255,7 +1255,7 @@ footer {
     }
 
     .nav-burger {
-        display: flex;
+        display: none;
         flex-direction: column;
     }
     
