@@ -32,6 +32,10 @@ header {
     justify-content: space-between;
 }
 
+.nav-burger {
+    display: none;
+}
+
 .nav {
     display: flex;
 }
@@ -93,6 +97,10 @@ header {
 }
 
 .header-menu {
+    display: none;
+}
+
+.popup {
     display: none;
 }
 
@@ -903,106 +911,6 @@ footer {
     margin-top: 10px;
 }
 
-@media screen and (max-width : 1300px) {
-
-
-    .home {
-        height: 504px;
-        background-size: 110%;
-        background-repeat: no-repeat;
-        background-position-x: -125px;
-        background-position-y: -71px;
-    }
-
-    .home-content {
-        position: absolute;
-        left: 49.5%;
-        bottom: 147px;
-    }
-
-    .circle {
-        width: 367px;
-        height: 367px;
-    }
-
-    .home-text {
-        position: absolute;
-        left: 66px;
-        top: 53px;
-        font-size: 85px;
-        line-height: 0.75;
-        margin: 0;
-    }
-
-    .button-home {
-        position: absolute;
-        left: 30%;
-        top: 108%;
-    }
-
-    .guide-content-right-img {
-        display: none;
-    }
-
-    .cards {
-        row-gap: 75px;
-    }
-
-    .circle-card-right {
-        position: absolute;
-        top: 35%;
-        right: 33%;
-    }
-
-    .circle-card-right {
-        position: absolute;
-        top: 35%;
-        left: 33%;
-    }
-
-    .cards-decoration-left {
-        position: absolute;
-        height: 478px;
-        width: 740px;
-        left: -477px;
-        bottom: -90px;
-    }
-
-    .review-img {
-        position: absolute;
-        right: 0;
-        bottom: -11%;
-        width: 223px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1000px) {
     header {
         padding-left: 30px;
@@ -1295,14 +1203,14 @@ footer {
 
     header {
         position: fixed;
-        width: 100%;
+        width: 100%;        
         padding: 0;
         z-index: 10;
     }
 
     .header-wrapper {
         height: 34px;
-        padding: 0 20px;
+        padding:0 20px;
     }
 
     .header-logo {
@@ -1344,6 +1252,30 @@ footer {
         background-color: #FFF;
         height: 2px;
         width: 100%;
+    }
+
+    .nav-burger {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .link-burger {
+        display: block;
+        margin-left: 58px;
+        color: #FFF;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+    
+    .link:hover {
+        color: #FE9013;
+        transition: color 0.3s ease;
+    }
+    
+    .link-first-burger {
+        margin-left: 63px;
+        color: #FE9013;
     }
 
     .home {
