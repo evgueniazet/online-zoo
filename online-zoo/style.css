@@ -7,6 +7,8 @@ body {
     margin: 0;
 }
 
+
+
 header {
     position: relative;
     z-index: 1;
@@ -120,8 +122,8 @@ header {
 
 .home-content {
     position: absolute;
-    left: 53%;
-    bottom: 24%;
+    left: 50.5%;
+    bottom: 32%;
 }
 
 .circle {
@@ -138,8 +140,8 @@ header {
     text-align: center;
     color: #FFFFFF;
     position: absolute;
-    left: 55px;
-    top: -30px;
+    left: 80px;
+    top: -31px;
 }
 
 .marked-text {
@@ -152,8 +154,8 @@ header {
     background: linear-gradient(114deg, #F9804B 1.50%, #FE9013 102%);
     width: 300px;
     height: 54px;
-    left: 40%;
-    top: 112%;
+    left: 38%;
+    top: 115%;
     border-radius: 25px;
     border: 0;
 }
@@ -188,8 +190,8 @@ header {
     display: flex;
     justify-content: space-between;
     width: 1160px;
-    margin-top: 50px;
-    padding-bottom: 162px;
+    margin-top: 140px;
+    padding-bottom: 157px;
 }
 
 .guide-content-right {
@@ -200,7 +202,8 @@ header {
 .guide-content-right-img {
     position: absolute;
     width: 293px;
-    right: -93px;
+    right: -88px;
+    top: 19px;
 }
 
 .guide-content-right-title {
@@ -213,6 +216,7 @@ header {
     font-size: 16px;
     margin: 0;
     margin-top: 20px;
+    line-height: 1.3;
 }
 
 .guide-content-right-subtitle {
@@ -225,11 +229,11 @@ header {
     font-size: 16px;
     margin: 0;
     margin-top: 34px;
+    line-height: 1.4;
 }
 
 .guide-content-left-img {
-    width: 580px;
-    height: 370px;
+    width: 52.5%;
 }
 
 main {
@@ -305,7 +309,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 12px 14px 16px;
+    padding: 8px 12px 14px 15px;
 }
 
 .card-icon {
@@ -315,18 +319,22 @@ main {
 .card-title {
     text-transform: uppercase;
     margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 .card-description {
     font-weight: 300;
     font-size: 15px;
-    line-height: 120%;
+    line-height: 1;
     margin: 0;
 }
 
 .circle-card {
+    position: relative;
     display: flex;
-    width: 1600px;
+    width: 100%;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -336,8 +344,8 @@ main {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 39%;
-    left: 8%;
+    bottom: 407px;
+    left: -81px;
     width: 62px;
     height: 62px;
     background: linear-gradient(114deg, #F9804B 1.50%, #FE9013 102%);
@@ -349,8 +357,8 @@ main {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 39%;
-    right: 8%;
+    bottom: 407px;
+    right: -79px;
     width: 62px;
     height: 62px;
     background: linear-gradient(114deg, #F9804B 1.50%, #FE9013 102%);
@@ -392,8 +400,8 @@ main {
     height: 54px;
     border-radius: 25px;
     border: 0;
-    margin-top: 130px;
-    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .button-card-text {
@@ -423,8 +431,8 @@ main {
     position: absolute;
     height: 642px;
     width: 880px;
-    left: -585px;
-    bottom: -110px;
+    left: -587px;
+    bottom: -97px;
 
 }
 
@@ -449,15 +457,17 @@ main {
     justify-content: center;
     align-items: center;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 
 .payment-content {
     background-color: rgba(253, 253, 255, 0.52);
-    /* height: 835px; */
+    height: 835px;
     width: 1160px;
     text-align: center;
     border-radius: 20px;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
 
 .payment-content-text {
@@ -470,6 +480,8 @@ main {
     font-size: 48px;
     font-weight: 400;
     line-height: 1.2;
+    margin: 0;
+    margin-top: 40px;
 }
 
 .payment-subtitle {
@@ -478,20 +490,26 @@ main {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.2;
+    margin: 0;
+    margin-top: 30px;
 }
 
 .payment-description {
     color: #333B41;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.4;
+    margin: 0;
+    margin-top: 40px;
 }
 
 .payment-text {
     color: #333B41;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.4;
+    margin: 0;
+    margin-top: 10px;
 }
 
 .payment-text-underline {
@@ -505,11 +523,14 @@ main {
     font-weight: 400;
     font-size: 36px;
     line-height: 1.3;
+    margin: 0;
+    margin-top: 60px;
 }
 
 .payment-cards {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .payment-card-area {
@@ -532,8 +553,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 168px;
-    width: 100px;
+    height: 149px;
+    width: 109px;
 }
 
 
@@ -543,6 +564,8 @@ main {
     margin-left: 15px;
     line-height: 1.3;
     margin: 0;
+    margin-top: 30px;
+    margin-left: 11px;
 }
 
 .payment-arrow-left {
@@ -559,7 +582,7 @@ main {
     height: 54px;
     border-radius: 25px;
     border: 0;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 60px;
 }
 
@@ -586,8 +609,8 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding-top: 147px;
-    padding-bottom: 173px;
+    margin-top: 140px;
+    padding-bottom: 176px;
 }
 
 .review-content {
@@ -689,8 +712,8 @@ main {
 
 .scroll {
     width: 600px;
-    margin-top: 24px;
-    margin-bottom: 28px;
+    margin-top: 17px;
+    margin-bottom: 32px;
     -webkit-appearance: none;
     height: 7px;
     background: rgba(255, 255, 255, 0.6);
@@ -719,13 +742,13 @@ main {
 .review-img {
     position: absolute;
     right: 0;
-    bottom: -16%;
-    width: 300px;
+    bottom: -18%;
+    width: 248px;
 }
 
 footer {
     background-color: #111115;
-    padding-top: 40px;
+    padding-top: 43px;
     padding-bottom: 50px;
 }
 
@@ -755,6 +778,7 @@ footer {
     border: 1px solid #FFF;
     border-radius: 2px;
     padding: 1px 5px 4px 5px;
+    line-height: 1.2;
 }
 
 .footer-logo-img {
@@ -774,7 +798,7 @@ footer {
 }
 
 .submit-window {
-    width: 228px;
+    width: 206px;
     height: 40px;
     padding: 0 10px;
     background-color: #111115;
@@ -911,12 +935,211 @@ footer {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+
+
+
+
+
+
+/* @media screen and (max-width: 1431px) {
+
+
+
+    .home {
+        height: 545px;
+        background-size: 119%;
+        background-repeat: no-repeat;
+        background-position-x: -100px;
+        background-position-y: -73px;
+    }
+
+    .guide-content-right-img {
+        display: none;
+    }
+} */
+
+
+
+
+
+
+
+
+
+/* 
+
+@media screen and (max-width: 1400px) {
     header {
         padding-left: 30px;
         padding-right: 30px;
     }
 
+
+    .link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .link:not(:first-child) {
+        margin-left: 48px;
+    }
+
+    .guide-content-right-img {
+        display: none;
+    }
+
+    .home {
+        height: 545px;
+        background-size: 119%;
+        background-repeat: no-repeat;
+        background-position-x: -100px;
+        background-position-y: -73px;
+    }
+
+    .home-content {
+        position: absolute;
+        left: 49.5%;
+        bottom: 147px;
+    }
+
+    .circle {
+        width: 367px;
+        height: 367px;
+    }
+
+    .home-text {
+        position: absolute;
+        left: 66px;
+        top: 53px;
+        font-size: 85px;
+        line-height: 0.75;
+        margin: 0;
+    }
+
+    .button-home {
+        position: absolute;
+        left: 30%;
+        top: 112%;
+    }
+
+
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 1250px) {
+
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    .link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .link:not(:first-child) {
+        margin-left: 48px;
+    }
+
+    .guide-content-right-img {
+        display: none;
+    }
+
+    .home {
+        height: 504px;
+        background-size: 119%;
+        background-repeat: no-repeat;
+        background-position-x: -96px;
+        background-position-y: -71px;
+    }
+
+    .home-content {
+        position: absolute;
+        left: 45.5%;
+        bottom: 147px;
+    }
+
+    .circle {
+        width: 367px;
+        height: 367px;
+    }
+
+    .home-text {
+        position: absolute;
+        left: 66px;
+        top: 53px;
+        font-size: 85px;
+        line-height: 0.75;
+        margin: 0;
+    }
+
+    .button-home {
+        position: absolute;
+        left: 30%;
+        top: 112%;
+    }
+
+
+} */
+
+
+
+
+
+/* @media screen and (max-width: 1073px) {
+
+    /* .guide-content-right-title {
+        font-size: 38px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .guide-content-right-subtitle {
+        font-size: 24px;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .guide-content-right-description {
+        font-size: 16px;
+        margin: 0;
+        margin-top: 25px;
+    } */
+
+
+
+
+
+
+
+@media screen and (max-width: 1599px) {
+
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
     .link {
         font-weight: 500;
@@ -973,14 +1196,14 @@ footer {
 
     .guide-content-right {
         margin: 0;
-        margin-left: 30px;
+        margin-left: 31px;
     }
 
     .guide-content-left-img {
         width: 455px;
-        height: 408px;
+        height: 416px;
         object-fit: cover;
-        object-position: -80px 10px;
+        object-position: -89px 5px;
     }
 
     .guide-content-right-description {
@@ -996,12 +1219,13 @@ footer {
     .cards {
         margin: 0;
         width: 100%;
-        row-gap: 75px;
+        row-gap: 88px;
     }
 
     .card {
         width: 292px;
         height: 354px;
+        margin: 0;
     }
 
     .card-img {
@@ -1017,16 +1241,14 @@ footer {
 
     .circle-card-right {
         position: absolute;
-        top: 386px;
-        right: 353px;
+        bottom: 460px;
+        right: 321px;
     }
 
     .circle-card-left {
-        top: 386px;
-        left: 355px;
+        bottom: 460px;
+        left: 323px;
     }
-
-
 
     .cards-decoration-right {
         position: absolute;
@@ -1046,24 +1268,27 @@ footer {
 
     .button-card {
         margin-bottom: 80px;
-        margin-top: 1px;
+        margin-top: -10px;
     }
 
     .payment-background {
         margin-top: 61px;
         position: relative;
         z-index: 1;
-        padding: 30px 30px 50px 30px;
+        padding: 0 30px 50px 30px;
 
     }
 
     .payment-content {
-        /* width: 940px; */
         height: 796px;
+        margin: 0;
+        margin-top: 30px;
+
     }
 
     .payment-content-text {
-        padding-left: 50px;
+        padding: 0;
+        margin-left: 50px;
     }
 
     .payment-title {
@@ -1084,6 +1309,9 @@ footer {
     .payment-text {
         margin: 0;
         margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3;
     }
 
     .payment-guide {
@@ -1151,8 +1379,8 @@ footer {
     .review-img {
         position: absolute;
         right: 0;
-        bottom: -64px;
-        width: 207px;
+        bottom: -74px;
+        width: 201px;
         height: 305px;
     }
 
@@ -1167,10 +1395,12 @@ footer {
 
     .review-button-wrapper {
         padding-bottom: 140px;
+        padding-left: 0px;
+
     }
 
     .review-button {
-        margin-top: 24px;
+        margin-top: 21px;
     }
 
     footer {
@@ -1194,23 +1424,43 @@ footer {
     }
 
     .footer-top-right {
-        margin-right: 9px;
+        margin-right: 32px;
     }
 
 }
 
-@media screen and (max-width: 640px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 999px) {
 
     header {
         position: fixed;
-        width: 100%;        
+        width: 100%;
         padding: 0;
         z-index: 10;
     }
 
     .header-wrapper {
         height: 34px;
-        padding:0 20px;
+        padding: 0 20px;
     }
 
     .header-logo {
@@ -1258,7 +1508,7 @@ footer {
         display: none;
         flex-direction: column;
     }
-    
+
     .link-burger {
         display: block;
         margin-left: 58px;
@@ -1267,23 +1517,23 @@ footer {
         font-weight: 500;
         transition: color 0.3s ease;
     }
-    
+
     .link:hover {
         color: #FE9013;
         transition: color 0.3s ease;
     }
-    
+
     .link-first-burger {
         margin-left: 63px;
         color: #FE9013;
     }
 
     .home {
-        height: 339px;
-        background-size: 118%;
+        height: 373px;
+        background-size: 116%;
         background-repeat: no-repeat;
         background-position-x: -55px;
-        background-position-y: -30px;
+        background-position-y: 8px;
     }
 
     .home-content {
@@ -1392,14 +1642,14 @@ footer {
 
     .circle-card-left {
         position: absolute;
-        top: 344px;
-        left: 244px;
+        bottom: 450px;
+        left: 37.5%;
     }
 
     .circle-card-right {
         position: absolute;
-        top: 344px;
-        right: 243px;
+        bottom: 450px;
+        right: 37%;
     }
 
     .button-card {
@@ -1424,16 +1674,19 @@ footer {
     }
 
     .payment-background {
-        padding: 20px 0;
+        margin-top: 58px;
+        padding: 18px 0;
     }
 
     .payment-content {
         height: 741px;
         width: 100%;
+        margin: 0;
     }
 
     .payment-content-text {
-        padding-left: 20px;
+        margin: 0;
+        padding: 0 20px;
     }
 
     .payment-title {
@@ -1499,7 +1752,7 @@ footer {
     }
 
     .review {
-        margin-top: 60px;
+        margin-top: 64px;
         overflow: hidden;
     }
 
@@ -1526,7 +1779,7 @@ footer {
     .review-content {
         width: 100%;
         overflow: hidden;
-        padding-bottom: 80px;
+        padding-bottom: 84px;
     }
 
     .review-card {
@@ -1614,10 +1867,10 @@ footer {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 639px) {
 
-    header {
-        padding: 0 10px;
+    .header-wrapper {
+        padding: 0 12px 0 10px;
     }
 
     .circle {
@@ -1626,11 +1879,11 @@ footer {
     }
 
     .home {
-        height: 187px;
+        height: 222px;
         background-size: 119%;
         background-repeat: no-repeat;
-        background-position-x: -29px;
-        background-position-y: 0;
+        background-position-x: -31px;
+        background-position-y: 34px;
     }
 
     .home-content {
@@ -1647,6 +1900,8 @@ footer {
         left: 19px;
         top: 21px;
     }
+
+
 
     .button-home {
         position: absolute;
@@ -1698,14 +1953,13 @@ footer {
     .cards-section {
         position: relative;
         z-index: 1;
-        margin-top: 40px;
+        margin-top: 37px;
         padding: 0 17px;
-    }
-
-    .cards-section {
         padding-bottom: 60px;
         overflow: hidden;
     }
+
+
 
     .cards {
         row-gap: 16px;
@@ -1724,13 +1978,9 @@ footer {
     }
 
     .button-card {
-        margin-bottom: 0;
-        margin-top: 3px;
-
-
+        margin-bottom: 1px;
+        margin-top: 7px;
     }
-
-
 
     .cards-decoration-right {
         width: 92px;
@@ -1789,7 +2039,7 @@ footer {
         font-weight: 400;
         font-size: 24px;
         line-height: 1.2;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .payment-cards {
@@ -1801,6 +2051,9 @@ footer {
 
     .payment-card-text {
         margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
     }
 
     .payment-card-area {
@@ -1809,21 +2062,21 @@ footer {
 
     .payment-arrow-right {
         position: absolute;
-        top: 455px;
-        left: 204px;
+        top: 463px;
+        left: 209px;
         transform: rotate(90deg);
-        width: 92px;
-        height: 24px;
+        width: 84px;
+        height: 25px;
 
     }
 
     .payment-arrow-left {
         position: absolute;
-        top: 205px;
-        left: 204px;
+        top: 215px;
+        left: 209px;
         transform: rotate(90deg);
-        width: 92px;
-        height: 24px;
+        width: 84px;
+        height: 25px;
     }
 
     .button-pay {
@@ -1875,7 +2128,7 @@ footer {
 
     .footer-wrapper {
         margin-top: 0;
-        padding: 20px 13px 20px 9px;
+        padding: 20px 13px 29px 9px;
     }
 
     .footer-top {
@@ -1889,9 +2142,9 @@ footer {
     .footer-logo-img {
         position: absolute;
         left: 158px;
-        top: 2px;
-        width: 10px;
-        height: 16px;
+        top: -4px;
+        width: 13px;
+        height: 22px;
     }
 
     .socials {
@@ -1914,13 +2167,13 @@ footer {
     }
 
     .footer-button {
-        margin-top: 82px;
+        margin-top: 80px;
     }
 
     .footer-nav {
         position: absolute;
-        bottom: 2.5%;
-        left: 0.5%;
+        bottom: 5.5%;
+        left: -0.5%;
     }
 
     .link-footer:not(:first-child) {
@@ -1929,8 +2182,12 @@ footer {
 
     .signature {
         position: absolute;
-        bottom: 57px;
-        right: 9px;
+        bottom: 72px;
+        right: 11px;
+    }
+
+
+    .signature-text {
         font-weight: 100;
         font-size: 15px;
         line-height: 1.2;
