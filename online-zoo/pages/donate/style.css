@@ -33,6 +33,10 @@ header {
 
 }
 
+.nav-burger {
+    display: none;
+}
+
 .nav {
     display: flex;
 }
@@ -97,7 +101,7 @@ header {
     background-image: url(../../assets/images/giantpanda.png);
     background-position: center;
     background-size: cover;
-    height: 390px;
+    height: 388px;
 }
 
 .guide-wrapper {
@@ -144,7 +148,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 57px;
     padding: 40px 92px 64px;
     border-radius: 20px;
 }
@@ -278,7 +282,7 @@ header {
 .line-container {
     position: absolute;
     left: 0;
-    top: 39px;
+    top: 40px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -389,6 +393,7 @@ footer {
 .footer-logo {
     position: relative;
     text-decoration: none;
+    width: 82px;
 }
 
 .footer-logo-text {
@@ -400,6 +405,7 @@ footer {
     border: 1px solid #FFF;
     border-radius: 2px;
     padding: 1px 5px 4px 5px;
+    line-height: 1.2;
 }
 
 .footer-logo-img {
@@ -419,8 +425,8 @@ footer {
 }
 
 .submit-window {
-    width: 228px;
-    height: 40px;
+    width: 208px;
+    height: 37px;
     padding: 0 10px;
     background-color: #111115;
     border: 1px solid #FE9013;
@@ -592,7 +598,7 @@ footer {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1599px) {
     header {
         padding-left: 30px;
         padding-right: 30px;
@@ -613,11 +619,11 @@ footer {
     }
 
     .home {
-        /* height: 780px; */
+        height: 390px;
         position: relative;
         /* background-image: url(./assets/images/giantpanda.png); */
-        background-size: 128%;
-        background-position-x: -20px;
+        background-size: 150%;
+        background-position-x: -128px;
         background-position-y: -177px;
     }
 
@@ -644,12 +650,34 @@ footer {
         padding: 0 44px 48px 47px;
     }
 
+
+
     .guide-content-title {
         margin-top: 19px;
+        margin-left: -16px;
     }
 
-    .guide-content-description{
+    .guide-content-description {
         margin-top: 11px;
+    }
+
+    .guide-content-scale-text {
+        padding-left: 18px;
+    }
+
+    .guide-content-scale {
+        margin-top: 48px;
+    }
+
+    .scale-number {
+        position: absolute;
+        left: -13px;
+        top: 30px;
+        color: #333B41;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 1.4;
+        margin: 0;
     }
 
     .scale-container {
@@ -665,12 +693,17 @@ footer {
     .line-container {
         width: calc(100% - 40px);
         margin-left: 18px;
+        top: 39px;
     }
 
     .line {
         margin: 0 15px;
     }
-    
+
+    .donation-button {
+        margin-top: 32px;
+    }
+
     .donation {
         margin-top: 57px;
     }
@@ -685,14 +718,14 @@ footer {
     }
 
     .submit-window {
-        /* width: 228px; */
-        /* height: 42px; */
+        width: 206px;
+        height: 40px;
     }
 
     .footer-nav {
         position: absolute;
-        bottom: 53px;
-        left: -14px;
+        bottom: 54px;
+        left: 0px
     }
 
     .link-footer:not(:first-child) {
@@ -700,8 +733,20 @@ footer {
     }
 
     .footer-top-right {
-        margin-right: 9px;
+        margin-right: 32px;
     }
+
+    .button-submit {
+        color: #4B9200;
+        background-color: #F1F3F2;
+        border: 1px solid #4B9200;
+        border-radius: 5px;
+        width: 129px;
+        height: 43px;
+        padding: 0;
+        /* margin-left: 29px; */
+    }
+
 }
 
 
@@ -748,8 +793,7 @@ footer {
 
 
 
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 999px) {
 
     header {
         /* position: relative; */
@@ -806,10 +850,10 @@ footer {
 
     .home {
         height: 335px;
-        background-size: 182%;
+        background-size: 209%;
         background-repeat: no-repeat;
-        background-position-x: -167px;
-        background-position-y: -165px;
+        background-position-x: -257px;
+        background-position-y: -160px;
     }
 
     .home-content {
@@ -846,6 +890,7 @@ footer {
     }
 
     .guide-content-title {
+        margin: 0;
         margin-top: 30px;
     }
 
@@ -912,6 +957,18 @@ footer {
         top: 31px;
     }
 
+    .scale-item:nth-child(6) .circle-wrapper {
+        display: block;
+        width: 39px;
+        left: -14px;
+        top: -15px;
+    }
+
+    .scale-item:nth-child(6) .scale-number {
+        color: #F9804B;
+    }
+
+
 
     .donation-input {
         width: 180px;
@@ -931,7 +988,7 @@ footer {
     }
 
     .footer-wrapper {
-        margin:0;
+        margin: 0;
         padding: 12px 20px;
         position: relative;
         height: 282px;
@@ -1001,10 +1058,20 @@ footer {
 
 
 
-@media only screen and (max-width: 639px) and (min-width: 0px)  {
+@media only screen and (max-width: 639px) {
+
+
+    header {
+        padding: 0 10px;
+
+    }
+
+
     .home {
         height: 187px;
-        background-position-y: -153px;
+        background-position-y: -100px;
+        background-position-x: -163px;
+        background-size: 250%;
     }
 
     .guide-wrapper {
@@ -1047,7 +1114,7 @@ footer {
 
     .guide-number {
         font-size: 41px;
-    } 
+    }
 
     .guide-content-fact {
         margin: 0;
@@ -1062,7 +1129,7 @@ footer {
         margin-left: 6px;
         margin-right: 36px;
         margin-bottom: -17px;
-        
+
         width: 8px;
     }
 
@@ -1126,13 +1193,14 @@ footer {
     }
 
     .donation-button {
-        margin-top: 29px;
+        margin-top: 30px;
     }
 
     .donation-text {
+        margin-top: 30px;
         letter-spacing: -0.02px;
         margin-bottom: 22px;
-    }   
+    }
 
     .footer-wrapper {
         margin-top: 0;
@@ -1144,7 +1212,7 @@ footer {
     }
 
     .footer-logo-text {
-        border: none;
+        padding: 1px 4px 3px 5px;
     }
 
     .footer-logo-img {
@@ -1196,11 +1264,4 @@ footer {
         font-size: 15px;
         line-height: 1.2;
     }
-
-
-
-
-    
-
-
 }

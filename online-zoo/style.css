@@ -1260,8 +1260,8 @@ footer {
 
     .cards-decoration-left {
         position: absolute;
-        left: -192px;
-        bottom: -142px;
+        left: -162px;
+        bottom: -136px;
         width: 386px;
         height: 281px;
     }
@@ -2063,7 +2063,7 @@ footer {
     .payment-arrow-right {
         position: absolute;
         top: 463px;
-        left: 209px;
+        left: 70%;
         transform: rotate(90deg);
         width: 84px;
         height: 25px;
@@ -2073,7 +2073,7 @@ footer {
     .payment-arrow-left {
         position: absolute;
         top: 215px;
-        left: 209px;
+        left: 70%;
         transform: rotate(90deg);
         width: 84px;
         height: 25px;
