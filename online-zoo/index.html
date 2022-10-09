@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
                     <a class="link link-first">About</a>
                     <a class="link" href="">Map</a>
                     <a class="link" href="">Zoos</a>
-                    <a class="link" href="../../evgueniazet-JSFE2022Q3/online-zoo/pages/donate/index.html">Donate</a>
+                    <a class="link" href="./pages/donate/index.html">Donate</a>
                     <a class="link" href="">Contact us</a>
                 </div>
                 <div><a class="link"
@@ -32,18 +32,28 @@
                         by ©</a></div>
             </div>
             <div class="header-menu">
-                <span class="header-menu-line"></span>
-                <span class="header-menu-line"></span>
-                <span class="header-menu-line"></span>
+                <span class="header-menu-line line1"></span>
+                <span class="header-menu-line line2"></span>
+                <span class="header-menu-line line3"></span>
             </div>
-            <div class="nav-burger">
-                <a class="link-burger link-first-burger">About</a>
-                <a class="link-burger href="">Map</a>
-                <a class="link-burger" href="">Zoos</a>
-                <a class="link-burger" href="../../evgueniazet-JSFE2022Q3/online-zoo/pages/donate/index.html">Donate</a>
-                <a class="link-burger" href="">Contact us</a>
+            <div class="shadow">
+                <div class="nav-burger">
+                    <div class="nav-burger-text">
+                        <a href="" class="burger-header-logo">
+                            <img class="burger-header-logo-img" src="./assets/images/bamboo.png" alt="bamboo" />
+                            <h1 class="burger-header-logo-text">PetStory<br />online</h1>
+                        </a>
+                        <a class="link-burger ">About</a>
+                        <a class="link-burger" href="">Map</a>
+                        <a class="link-burger" href="">Zoos</a>
+                        <a class="link-burger"
+                            href="./pages/donate/index.html">Donate</a>
+                        <a class="link-burger" href="">Contact us</a>
+                        <a class="link-burger" href="">Designed by ©</a>
+                    </div>
+                    <!-- <img class="nav-burger-logo" src="../online-zoo/assets/icons/x.svg" alt="x" /> -->
+                </div>
             </div>
-            
         </div>
     </header>
     <aside class="home">
@@ -72,94 +82,218 @@
                     and care for animals.</p>
                 <h2 class="guide-content-right-subtitle">How it works </h2>
                 <p class="guide-content-right-description">The main goal is to help the animals, as well as the
-                    nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island
-                    near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
+                    nature reserves and zoos where they are kept. We are currently working on video projects targeting
+                    pandas in China, eagles on an island
+                    near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than
+                    1,500 mammals and reptiles.</p>
             </div>
         </div>
         <img class="guide-content-right-img" src="./assets/images/flower_foto.png" alt="flowerfoto" />
     </section>
     <section class="cards-section">
-        <div class="cards">
-            <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <div>
-                        <h1 class="card-title">Giant Pandas</h1>
-                        <p class="card-description">Native to Southwest China</p>
+        <div class="cards-wrapper">
+            <!-- <div class="circle-card"> -->
+            <div class="circle-card-left">
+                <p class="circle-card-left-arrow">&#8592;</p>
+            </div>
+            <div class="circle-card-right">
+                <p class="circle-card-right-arrow">&#8594;</p>
+            </div>
+            <!-- </div> -->
+            <div class="cards-container">
+                <div class="cards cards--prev">
+                    <div class="card">
+                        <img class="card-img" src="./assets/images/giantpandas.png" alt="giantpandas" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Giant Pandas</h1>
+                                <p class="card-description">Native to Southwest China</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
                     </div>
-                    <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <div>
-                        <h1 class="card-title">Eagles</h1>
-                        <p class="card-description">Native to South America</p>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/penguins.png" alt="penguins" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Penguins</h1>
+                                <p class="card-description">Native to Antarctica</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
                     </div>
-                    <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <div>
-                        <h1 class="card-title">Gorillas</h1>
-                        <p class="card-description">Native to Congo</p>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/eagles.png" alt="eagles" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Eagles</h1>
+                                <p class="card-description">Native to South America</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
                     </div>
-                    <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <div>
-                        <h1 class="card-title">Two-toed Sloth</h1>
-                        <p class="card-description">Mesoamerica, South America</p>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/cheetahs.png" alt="cheetahs" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Cheetahs</h1>
+                                <p class="card-description">Native to Africa</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
                     </div>
-                    <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <div>
-                        <h1 class="card-title">Cheetahs</h1>
-                        <p class="card-description">Native to Africa</p>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/gorillas.png" alt="gorillas" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Gorillas</h1>
+                                <p class="card-description">Native to Congo</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
                     </div>
-                    <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <div>
-                        <h1 class="card-title">Penguins</h1>
-                        <p class="card-description">Native to Antarctica</p>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/two-toed-sloth.png"
+                            alt="two-toed-sloth" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Two-toed Sloth</h1>
+                                <p class="card-description">Mesoamerica, South America</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
                     </div>
-                    <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <div>
-                        <h1 class="card-title">Alligators</h1>
-                        <p class="card-description">Native to Southeastern U.S.</p>
+                <div class="cards cards--active">
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/giantpandas.png" alt="giantpandas" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Giant Pandas</h1>
+                                <p class="card-description">Native to Southwest China</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
                     </div>
-                    <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/two-toed-sloth.png"
+                            alt="two-toed-sloth" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Two-toed Sloth</h1>
+                                <p class="card-description">Mesoamerica, South America</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/alligator.png" alt="alligator" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Alligators</h1>
+                                <p class="card-description">Native to Southeastern U.S.</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/eagles.png" alt="eagles" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Eagles</h1>
+                                <p class="card-description">Native to South America</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/cheetahs.png" alt="cheetahs" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Cheetahs</h1>
+                                <p class="card-description">Native to Africa</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/gorillas.png" alt="gorillas" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Gorillas</h1>
+                                <p class="card-description">Native to Congo</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>                    
+                </div>
+                <div class="cards cards--next">
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/eagles.png" alt="eagles" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Eagles</h1>
+                                <p class="card-description">Native to South America</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/two-toed-sloth.png"
+                            alt="two-toed-sloth" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Two-toed Sloth</h1>
+                                <p class="card-description">Mesoamerica, South America</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/cheetahs.png" alt="cheetahs" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Cheetahs</h1>
+                                <p class="card-description">Native to Africa</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/gorillas.png" alt="gorillas" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Gorillas</h1>
+                                <p class="card-description">Native to Congo</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/giantpandas.png" alt="giantpandas" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Giant Pandas</h1>
+                                <p class="card-description">Native to Southwest China</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/banana-bamboo_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../online-zoo/assets/images/penguins.png" alt="penguins" />
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-title">Penguins</h1>
+                                <p class="card-description">Native to Antarctica</p>
+                            </div>
+                            <img class="card-icon" src="./assets/images/meet-fish_icon.png" alt="banana-bamboo" />
+                        </div>
+                    </div>                    
                 </div>
             </div>
-           
-            <div class="circle-card">
-                <div class="circle-card-left">
-                    <p class="circle-card-left-arrow">&#8592;</p>
-                </div>
-                <div class="circle-card-right">
-                    <p class="circle-card-right-arrow">&#8594;</p>
-                </div>
-            </div>
+
         </div>
+
         </div>
         <div class="cards-decoration">
             <button class="button-card">
@@ -214,7 +348,8 @@
                     <p class="payment-card-text">Your favourite animal gets delicious dish</p>
                 </div>
                 <img class="payment-arrow-left" src="../online-zoo/assets/images/greenarrow.png" alt="greenarrow"></img>
-                <img class="payment-arrow-right" src="../online-zoo/assets/images/greenarrow.png" alt="greenarrow"></img>
+                <img class="payment-arrow-right" src="../online-zoo/assets/images/greenarrow.png"
+                    alt="greenarrow"></img>
 
             </div>
             <button class="button-pay">
@@ -368,8 +503,7 @@
                 <div class="review-card-wrapper">
                     <div class="review-card">
                         <div class="review-header">
-                            <img class="review-card-img" src="../online-zoo/assets/images/mila.png"
-                                alt="frederica" />
+                            <img class="review-card-img" src="../online-zoo/assets/images/mila.png" alt="frederica" />
                             <div class="review-username">
                                 <h1 class="review-title">Mila Riksha</h1>
                                 <p class="review-description">Local Austria&#8226;Yesterday</p>
@@ -386,7 +520,7 @@
                             The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo
                             is one jf</p>
                     </div>
-                </div>                
+                </div>
             </div>
             <form>
                 <input class="scroll" type="range" min="0" max="100" value="20" name="range" step="1" />
@@ -471,7 +605,7 @@
         </div>
     </footer>
 
-    <!-- <script src="../online-zoo/script.js"></script> -->
+    <script src="../online-zoo/script.js"></script>
 </body>
 
 </html>

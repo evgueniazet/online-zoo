@@ -796,18 +796,110 @@ footer {
 @media screen and (max-width: 999px) {
 
     header {
-        /* position: relative; */
-        /* height: 34px; */
-        padding: 0 20px
+        position: fixed;
+        width: 100%;
+        padding: 0;
+    }
+
+    .header--active {
+        background-color: #FFF;
+    }
+
+    .header--active .header-wrapper {
+        padding-left: 10px;
+    }
+
+    .header--active .header-logo {
+        border: 1px solid #FE9013;
+        border-radius: 2px;
+        padding: 2.84px 3.8px;
+        margin-top: 10px;
+    }
+
+    .header--active .nav-burger {
+        display: flex;
+    }
+
+    .header--active .header-logo-text {
+        color: #FE9013;
+    }
+
+    .header--active .header-menu {
+        display: block;
+    }
+
+    .header--active .header-menu-line {
+        background-color: #000;
+    }
+
+    .header--active .line1 {
+        transform: rotate(45deg);
+        position: relative;
+        top: 2px;
+        transition: transform 0.2s, position 0.2s, top 0.2s;
+    }
+
+    .header--active .line1:hover {
+        transition: transform 0.2s, position 0.2s, top 0.2s;
+    }
+
+    .header--active .line2 {
+        display: none;
+        transition: display 0.2s;
+    }
+
+    .header--active .line2:hover {
+        transition: display 0.2s;
+    }
+
+    .header--active .line3 {
+        transform: rotate(135deg);
+        transition: transform 0.2s;
+    }
+
+    .header--active .line3:hover {
+        transition: transform 0.2s;
+    }
+
+    .burger-header-logo {
+        border: 1px solid;
+        border-color: #FE9013;
+        border-radius: 2px;
+        padding: 4px 5px;
+        text-align: left;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .burger-header-logo-text {
+        font-size: 19px;
+        margin: 0;
+        font-weight: 400;
+        color: #FE9013;
+        transition: color .3s ease;
+    }
+
+    .burger-header-logo-img {
+        position: absolute;
+        left: 14px;
+        bottom: 9px;
+        width: 8px;
+        height: 16px;
     }
 
     .header-wrapper {
         height: 34px;
+        padding: 0 20px;
     }
 
     .header-logo {
         border: none;
-        padding: 0;
+        padding: 3.55px 4.75px 3.55px 4.75px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
     }
 
     .header-logo-text {
@@ -818,13 +910,12 @@ footer {
 
     .header-logo-img {
         position: absolute;
-        left: 3px;
-        bottom: 3px;
+        left: 8px;
+        bottom: 7px;
     }
 
     .nav {
         display: none;
-
     }
 
     .link {
@@ -837,6 +928,7 @@ footer {
         justify-content: space-between;
         width: 18px;
         height: 10px;
+        z-index: 4;
     }
 
     .header-menu-line {
@@ -844,6 +936,61 @@ footer {
         background-color: #FFF;
         height: 2px;
         width: 100%;
+    }
+
+    .shadow {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+    }
+
+    .header--active .shadow {
+        display: flex;
+    }
+
+    .nav-burger {
+        display: none;
+        flex-direction: column;
+        background-color: #FFF;
+        height: 70%;
+        width: 100%;
+    }
+
+    .nav-burger-logo {
+        position: absolute;
+        top: 18px;
+        right: 22px;
+    }
+
+    .nav-burger-text {
+        margin-bottom: 40px;
+    }
+
+    .link-burger {
+        display: block;
+        color: #333B41;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+        transition: color 0.3s ease;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+
+    .link-first-burger {
+        margin: 0;
+    }
+
+    .link:hover {
+        color: #FE9013;
+        transition: color 0.3s ease;
     }
 
 
@@ -957,7 +1104,7 @@ footer {
         top: 31px;
     }
 
-    .scale-item:nth-child(6) .circle-wrapper {
+    /* .scale-item:nth-child(6) .circle-wrapper {
         display: block;
         width: 39px;
         left: -14px;
@@ -966,7 +1113,7 @@ footer {
 
     .scale-item:nth-child(6) .scale-number {
         color: #F9804B;
-    }
+    } */
 
 
 
@@ -1170,6 +1317,14 @@ footer {
         height: 5px;
     }
 
+    .circle-wrapper {
+        width: 21px;
+        position: absolute;
+        left: -8px;
+        top: -17px;
+        display: none;
+    }
+
     .scale-number {
         font-size: 13px;
         line-height: 1.4;
@@ -1177,12 +1332,12 @@ footer {
         left: -10px;
     }
 
-    .scale-item:nth-child(6) .circle-wrapper {
+    /* .scale-item:nth-child(6) .circle-wrapper {
         display: block;
         width: 20px;
         left: -8px;
         top: -17px;
-    }
+    } */
 
     .donation {
         margin-top: 3px;
