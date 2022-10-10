@@ -883,10 +883,11 @@ footer {
 
     .burger-header-logo-img {
         position: absolute;
-        left: 14px;
-        bottom: 9px;
-        width: 8px;
-        height: 16px;
+        left: 13px;
+        top: 38px;
+        width: 10px;
+        /* height: 16px; */
+        color: #FA6F32;
     }
 
     .header-wrapper {

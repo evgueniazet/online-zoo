@@ -17,35 +17,31 @@ function handClickShadow(event) {
         header.classList.toggle('header--active');
     }
 }
-// const circleCard = document.querySelector('.circle-card-right', '.circle-card-left');
-// const card = document.querySelector('.card');
-// circleCard.addEventListener('click',)
+
+
+
+
+
+
 
 
 const cards = document.querySelectorAll('.cards');
 const circleCardLeft = document.querySelector('.circle-card-left');
 const circleCardRight = document.querySelector('.circle-card-right');
 const cardsContainer = document.querySelector('.cards-container');
-// console.log('circleCardLeft', circleCardLeft);
-// console.log('circleCardRight', circleCardRight);
-// console.log('cards', cards);
 
-// console.log('cardsContainer', cardsContainer);
-
-for (let i = 0; i < cards.length; i++) {    
+for (let i = 0; i < cards.length; i++) {
     cards[i].style.width = cardsContainer.offsetWidth + 'px';
 }
 
 window.addEventListener('resize', resizeHandler);
 
-function resizeHandler(){
+function resizeHandler() {
     const cardsContainer = document.querySelector('.cards-container');
-    for (let i = 0; i < cards.length; i++) {    
+    for (let i = 0; i < cards.length; i++) {
         cards[i].style.width = cardsContainer.offsetWidth + 'px';
     }
 };
-
-
 
 circleCardRight.addEventListener('click', circleRightClick);
 
@@ -63,9 +59,10 @@ function circleRightClick() {
     cardsPrev.classList.add('cards--next');
 
     cardsContainer.append(cardsPrev);
+    blockClick();
 };
 
-circleCardLeft.addEventListener('click',circleLeftClick);
+circleCardLeft.addEventListener('click', circleLeftClick);
 
 function circleLeftClick() {
     const cards = document.querySelectorAll('.cards');
@@ -80,15 +77,84 @@ function circleLeftClick() {
     cardsNext.classList.remove('cards--next');
     cardsNext.classList.add('cards--prev');
 
-    cardsContainer.prepend(cardsNext);    
+    cardsContainer.prepend(cardsNext);
+    blockClick();
+};
+
+function removeBlockClick() {
+    circleCardLeft.classList.remove('circle-card--unactive');
+    circleCardRight.classList.remove('circle-card--unactive');
+};
+
+function blockClick() {
+    circleCardLeft.classList.add('circle-card--unactive');
+    circleCardRight.classList.add('circle-card--unactive');
+    setTimeout(removeBlockClick, 1000);
 };
 
 
 
-// cardsContainer.offsetWidth
+
+
+const reviewCard = document.querySelectorAll('.review-card');
+const popupBackground = document.querySelector('.popup-background');
+const popupIcon = document.querySelector('.popup-icon');
+
+
+let activePopUpCardIndex;
+
+for (let i = 0; i < reviewCard.length; i++) {
+    reviewCard[i].addEventListener('click', function () {
+        reviewCardClick(i);
+    });
+}
+
+function reviewCardClick(i) {
+    popupBackground.classList.toggle('popup-background--active');
+    reviewCard[i].classList.toggle('review-card--active');
+    popupIcon.classList.add('popup-icon--active');
+    activePopUpCardIndex = i;
+};
+
+popupIcon.addEventListener('click', popupCloseClick);
+
+function popupCloseClick() {
+    popupBackground.classList.remove('popup-background--active');
+    reviewCard[activePopUpCardIndex].classList.remove('review-card--active');
+};
+
+popupBackground.addEventListener('click', backgroundClick);
+
+function backgroundClick() {
+    popupBackground.classList.remove('popup-background--active');
+    reviewCard[activePopUpCardIndex].classList.remove('review-card--active');
+    popupIcon.classList.remove('popup-icon--active');
+};
 
 
 
+
+
+
+
+
+const input = document.querySelector('.scroll');
+const reviewCardsContainer = document.querySelector('.review-cards-container');
+const reviewCards = document.querySelector('.review-cards');
+
+
+input.addEventListener('input', inputClickNumber);
+
+function inputClickNumber(event) {
+const inputPlace = event.target.value;
+const reviewWidth = 0.125 * inputPlace;
+console.log('reviewWidth', reviewWidth);
+const reviewCardsWidth = reviewCards.offsetWidth;
+const reviewCardsContainerWidth = reviewCardsContainer.offsetWidth;
+console.log('reviewCardsWidth', reviewCardsWidth);
+const reviewCardMove = reviewWidth * (reviewCardsWidth - reviewCardsContainerWidth);
+reviewCards.style.left = -reviewCardMove + 'px';
+};
 
 
 
