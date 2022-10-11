@@ -355,6 +355,8 @@ main {
     height: 62px;
     background: linear-gradient(114deg, #F9804B 1.50%, #FE9013 102%);
     border-radius: 230px;
+    cursor: pointer;
+    
 }
 
 
@@ -373,6 +375,8 @@ main {
     height: 62px;
     background: linear-gradient(114deg, #F9804B 1.50%, #FE9013 102%);
     border-radius: 230px;
+    cursor: pointer;
+   
 }
 
 .circle-card-right-arrow {
@@ -639,6 +643,7 @@ main {
 .review-cards {
     position: absolute;
     display: flex;
+    transition: left 0.3s ;
 }
 
 .review-card-wrapper {
