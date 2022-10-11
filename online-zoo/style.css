@@ -356,7 +356,7 @@ main {
     background: linear-gradient(114deg, #F9804B 1.50%, #FE9013 102%);
     border-radius: 230px;
     cursor: pointer;
-    
+
 }
 
 
@@ -376,7 +376,7 @@ main {
     background: linear-gradient(114deg, #F9804B 1.50%, #FE9013 102%);
     border-radius: 230px;
     cursor: pointer;
-   
+
 }
 
 .circle-card-right-arrow {
@@ -643,7 +643,7 @@ main {
 .review-cards {
     position: absolute;
     display: flex;
-    transition: left 0.3s ;
+    transition: left 0.3s;
 }
 
 .review-card-wrapper {
@@ -657,7 +657,7 @@ main {
     background: #F1F3F2;
     padding: 15px 15px 19px 16px;
     border-radius: 10px;
-    width: 267px;
+    width: 237px;
 }
 
 .review-card-wrapper:not(:first-child) {
@@ -1214,6 +1214,7 @@ footer {
 
     .review-card {
         padding: 10px 27px 16px 16px;
+        width: 245px;
     }
 
     .review-img {
@@ -1721,6 +1722,15 @@ footer {
         margin-top: 35px;
     }
 
+    .review-cards-container {
+        position: relative;
+        height: 401px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        max-width: 1160px;
+    }
+
     .review-card-wrapper {
         width: 100%;
         box-sizing: border-box;
@@ -2110,6 +2120,15 @@ footer {
         height: 357px;
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .review-cards-container {
+        position: relative;
+        height: 385px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        max-width: 1160px;
     }
 
     .review-card--active {
